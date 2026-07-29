@@ -306,7 +306,6 @@ h2 b {
   animation: scroll 1.6s infinite;
 }
 
-/* Sobre */
 .about {
   border-top: 1px solid var(--line);
   background: linear-gradient(110deg, #090a0a, #11100e);
@@ -340,7 +339,9 @@ h2 b {
   max-width: 375px;
   color: #c8cdd3;
   font-size: 13px;
-  line-height: 1.7;
+  line-height: 1.8;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .benefits {

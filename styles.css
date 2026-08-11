@@ -393,7 +393,7 @@ h2 b {
   pointer-events: none;
 }
 
-/* Modalidades */
+
 .modalities {
   padding: 88px 0;
   border-top: 1px solid var(--line);
@@ -492,7 +492,6 @@ h2 b {
 }
 
 
-/* Indicadores */
 .stats {
   padding: 60px 0;
   border-block: 1px solid var(--line);
@@ -531,7 +530,7 @@ h2 b {
   text-transform: uppercase;
 }
 
-/* Instagram e rodapé */
+
 .instagram {
   padding: 86px 0;
   background: radial-gradient(circle at 4% 5%, #063d96, transparent 30%), #050c16;
@@ -561,7 +560,7 @@ h2 b {
 .outline-button {
   padding: 17px 22px;
   border: 1px solid var(--blue);
-  font-size: 10px;
+  font-size: 18px;
   font-weight: 800;
   text-transform: uppercase;
   white-space: nowrap;
@@ -1012,12 +1011,12 @@ footer {
 
 }
 
-/* AJUSTES RESPONSIVOS FINAIS */
+
 
 @media (max-width:880px) {
 
 
-  /* MENU */
+  
 
   .links {
     display: none;
@@ -1035,7 +1034,7 @@ footer {
 
 
 
-  /* SOBRE */
+ 
 
   .about-grid {
 
@@ -1084,7 +1083,7 @@ footer {
 
 
 
-  /* CARDS */
+  
 
   .cards {
 
@@ -1094,7 +1093,7 @@ footer {
 
 
 
-  /* ESTATÍSTICAS */
+ 
 
   .stats-grid {
 
@@ -1104,7 +1103,7 @@ footer {
 
 
 
-  /* FOOTER */
+  
 
   .footer-grid {
 

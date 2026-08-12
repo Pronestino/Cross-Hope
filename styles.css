@@ -1526,13 +1526,13 @@ footer {
 
   .about-copy {
     padding-right: 0;
-    text-align: center;
+    text-align: justify;
   }
 
   .about-copy p {
     margin-right: auto;
     margin-left: auto;
-    text-align: center;
+    text-align: justify;
   }
 
   .benefits {

@@ -12,28 +12,40 @@ const observer = new IntersectionObserver(
 
 document.querySelectorAll(".reveal").forEach((section) => observer.observe(section));
 
-document.querySelectorAll('a[href^="#"]').forEach((link) => {
-    link.addEventListener("click", (event) => {
-        const destination = document.querySelector(link.getAttribute("href"));
-        if (!destination) return;
-        event.preventDefault();
+const lenis = typeof Lenis !== "undefined"
+    ? new Lenis({
+        autoRaf: true,
+        smoothWheel: true,
+        wheelMultiplier: 0.9,
+        touchMultiplier: 1.2,
+        anchors: false
+    })
+    : null;
+
+function scrollToTarget(target) {
+    const topbar = document.querySelector(".topbar");
+    const offset = topbar ? -topbar.offsetHeight : 0;
+
+    if (lenis) {
+        lenis.scrollTo(target, { offset, duration: 1.2 });
+        return;
+    }
+
+    const destination = typeof target === "string" ? document.querySelector(target) : target;
+    if (destination) {
         destination.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
-});
-
-const lenis = new Lenis({
-    duration: 1.2,
-    smoothWheel: true,
-    wheelMultiplier: 0.9,
-    touchMultiplier: 1.4
-});
-
-function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
+    }
 }
 
-requestAnimationFrame(raf);
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", (event) => {
+        const target = link.getAttribute("href");
+        if (!target || target === "#") return;
+        if (!document.querySelector(target)) return;
+        event.preventDefault();
+        scrollToTarget(target);
+    });
+});
 
 const backToTop = document.querySelector('.back-to-top');
 
@@ -47,8 +59,11 @@ window.addEventListener('scroll', () => {
 
 backToTop.addEventListener("click", (e) => {
     e.preventDefault();
-
-    lenis.scrollTo(0);
+    if (lenis) {
+        lenis.scrollTo(0, { duration: 1.2 });
+    } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
 });
 
 const menuButton = document.querySelector(".menu-mobile");

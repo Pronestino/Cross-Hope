@@ -4,15 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
     <meta name="description" content="Cross Hope Box Training — mais que treino, uma comunidade." />
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Cross Hope Box Training">
     <meta property="og:description" content="Mais que treino. Uma comunidade. Um propósito.">
-
-    <meta property="og:image" content="https://SEU-DOMINIO.com.br/assets/open graph.png">
-
-    <meta property="og:url" content="https://SEU-DOMINIO.com.br">
 
     <meta property="og:site_name" content="Cross Hope Box Training">
 
@@ -25,25 +22,24 @@
 
     <meta name="twitter:description" content="Mais que treino. Uma comunidade. Um propósito.">
 
-    <meta name="twitter:image" content="https://SEU-DOMINIO.com.br/assets/open graph.png">
     <meta property="og:type" content="website">
 
     <meta property="og:title" content="Cross Hope Box Training">
 
     <meta property="og:description" content="Mais que treino. Uma comunidade. Um propósito.">
 
-    <meta property="og:image" content="https://SEUDOMINIO.com.br/assets/imagens/banner-social.jpg">
-
-    <meta property="og:url" content="https://SEUDOMINIO.com.br">
     <meta name="keywords"
         content="Cross Training, CrossFit, Hyrox, Treino Funcional, Academia Carapicuíba, Box CrossFit, LPO, Cross Hope">
     <title>Cross Hope Box Training</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.26/dist/lenis.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="icon" type="image/PNG" href="assets/imagens/cross-hope-logo.png" />
 
@@ -61,6 +57,7 @@
                 <div class="links">
                     <a href="#sobre">Sobre</a>
                     <a href="#modalidades">Modalidades</a>
+                    <a href="#video">O Box</a>
                     <a href="#instagram">Nossa Página</a>
 
                     <a class="button" href="https://api.whatsapp.com/send?phone=5511941173112" target="_blank">
@@ -80,6 +77,7 @@
 
                     <a href="#sobre">Sobre</a>
                     <a href="#modalidades">Modalidades</a>
+                    <a href="#video">O Box</a>
                     <a href="#instagram">Nossa Página</a>
 
                     <a class="button" href="https://api.whatsapp.com/send?phone=5511941173112">
@@ -116,13 +114,13 @@
                         endereço, evoluindo constantemente e fortalecendo nosso propósito. Em novembro de 2019,
                         consolidamos a identidade que nos acompanha até hoje, reafirmando os pilares que fazem parte da
                         nossa essência: treinos, amizades e conexões.
-                    
-                    
+
+
                         Somos um ambiente acolhedor, familiar e preparado para receber pessoas de todas as idades e
                         níveis de condicionamento físico. Aqui, cada aluno é incentivado a evoluir no seu próprio ritmo,
                         respeitando sua individualidade e construindo relações verdadeiras dentro e fora dos treinos.
-                    
-                    
+
+
                         Nossa metodologia é baseada no Cross Training, com aulas adaptadas para diferentes perfis e
                         objetivos, por meio das modalidades Cross Training, LPO, Cross Kids e Funcional Hope. Atendemos
                         crianças, adolescentes, adultos e pessoas mais velhas, sempre com acompanhamento próximo,
@@ -185,10 +183,37 @@
                         <p>Desafios físicos que estimulam a resistência e o desempenho.</p>
                         <a href="#contato">Quero conhecer →</a>
                     </article>
+                    <article class="card">
+                        <img src="assets/imagens/cross3.jpg" alt="Cross Kids" loading="lazy" decoding="async"
+                            width="400" height="600">
+                        <h3>Cross Kids</h3>
+                        <p>Atividades divertidas que desenvolvem coordenação, confiança e hábitos saudáveis.</p>
+                        <a href="#contato">Quero conhecer →</a>
+                    </article>
                 </div>
             </div>
         </section>
 
+
+        <section class="video-showcase" id="video" aria-labelledby="video-title">
+            <div class="container video-showcase-grid reveal">
+                <div class="video-showcase-copy">
+                    <span class="eyebrow">A nossa casinha</span>
+                    <h2 id="video-title">Onde a energia<br><b>ganha vida</b></h2>
+                    <p>Mais do que um lugar para treinar: um espaço para superar limites, celebrar conquistas e se
+                        sentir em casa.</p>
+                    <a class="video-cta" href="https://api.whatsapp.com/send?phone=5511941173112" target="_blank"
+                        rel="noreferrer">Venha treinar com a gente <span>→</span></a>
+                </div>
+                <div class="video-frame">
+                    <span class="video-label">Cross Hope · nossa casinha</span>
+                    <video controls playsinline preload="metadata" aria-label="Vídeo do espaço Cross Hope Box Training">
+                        <source src="assets/videos/cross-hope-box.mp4" type="video/mp4">
+                        Seu navegador não suporta a reprodução de vídeos.
+                    </video>
+                </div>
+            </div>
+        </section>
 
         <section class="stats">
             <div class="container stats-grid reveal">
@@ -244,7 +269,7 @@
     <a href="#" class="back-to-top" aria-label="Voltar ao topo">
         <i class="fas fa-arrow-up"></i>
     </a>
-    <script src="https://unpkg.com/lenis/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.26/dist/lenis.min.js"></script>
     <script src="script.js"></script>
 
 </body>

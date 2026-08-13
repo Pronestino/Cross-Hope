@@ -345,25 +345,6 @@ h2 b {
 }
 
 
-.benefits {
-  display: flex;
-  gap: 28px;
-  margin-top: 37px;
-}
-
-.benefits div {
-  max-width: 95px;
-  font-size: 10px;
-  line-height: 1.45;
-}
-
-.benefits i {
-  display: block;
-  margin-bottom: 8px;
-  color: var(--blue);
-  font-size: 28px;
-  font-style: normal;
-}
 
 .about-image {
   position: relative;
@@ -771,9 +752,7 @@ footer {
     font-size: 14px;
   }
 
-  .benefits {
-    gap: 18px;
-  }
+
 
   .cards {
     grid-template-columns: 1fr;
@@ -1342,15 +1321,8 @@ footer {
     font-size: 8px;
   }
 
-  .benefits {
-    justify-content: space-between;
-    gap: 10px;
-  }
 
-  .benefits div {
-    max-width: 88px;
-    font-size: 9px;
-  }
+
 
   .about-image,
   .about-image img {
@@ -1535,9 +1507,7 @@ footer {
     text-align: justify;
   }
 
-  .benefits {
-    justify-content: center;
-  }
+
 
   .about-image {
     min-height: 300px;
